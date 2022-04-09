@@ -38,12 +38,19 @@ from sklearn.metrics import classification_report
 import hvplot.pandas
 from pathlib import Path
 import matplotlib.pyplot as plt
+from numpy.random import seed
+from tensorflow import random
 %matplotlib inline
 
-# Setting these options will allow for reviewing more of the DataFrames
+### Setting these options will allow for reviewing more of the DataFrames
 pd.set_option("display.max_rows", 2000)
 pd.set_option("display.max_columns", 2000)
 pd.set_option("display.width", 1000)
 
-from numpy.random import seed
-from tensorflow import random
+
+## Conclusion
+
+Both models have proven to be profitable. The manual model uses fewer trades but, has a higher ROI.
+The TensorFlow model is more active while producing more profit in less time. 
+
+Both models require a mix of art and science to fine tune.
